@@ -18,11 +18,11 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install
+    npm audit fix
     npm install -g ionic
     npm i -g cordova
     ionic cordova platform remove android
     ionic cordova platform remove browser
+    ionic cordova platform remove ios
     ionic build
-    ionic build --prod
-    ionic build --watch
   displayName: 'ionic install and build'
