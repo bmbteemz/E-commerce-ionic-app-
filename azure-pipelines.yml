@@ -19,6 +19,7 @@ steps:
     npm install -g @angular/cli
     npm install
     npm install -g ionic
+    ionic serve
     ionic build
     ionic build --prod
     ionic build --watch
