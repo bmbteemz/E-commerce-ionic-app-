@@ -19,7 +19,8 @@ steps:
     npm install -g @angular/cli
     npm install
     npm install -g ionic
-    ionic serve
+    ionic cordova platform remove android
+    ionic cordova platform remove browser
     ionic build
     ionic build --prod
     ionic build --watch
